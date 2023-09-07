@@ -134,4 +134,7 @@ df["hybrid_sorting_score"] = hybrid_sorting_score(df)
 df.sort_values("hybrid_sorting_score", ascending=False).head(20)
 
 df[df["course_name"].str.contains("Veri Bilimi")].sort_values("hybrid_sorting_score", ascending=False).head(20)
-
+#ürün sıralamada;
+#iş bilgisi açısından önemli olabilecek faktörler göz önünde bulundurulmalı.
+#eğer birden fazla faktör varsa bu faktörlerin etkileri aynı anda göz önünde bulundurulmak üzere önce standartlaştırılmalı daha sonra etkilerin farkı varsa ağırlıklandırılmalı
+#literatürdeki sitatiksel bazı yöntemler güvenilir de olsa bu yöntemleri tek başına kullanmak yerine iş bilgisi ile harmanlanacak şekilde birlikte kullanılmalıdır.
